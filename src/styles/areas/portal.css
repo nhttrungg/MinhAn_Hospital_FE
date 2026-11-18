@@ -1,0 +1,485 @@
+.at-portal-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  display: grid;
+  grid-template-columns: 224px minmax(0, 1fr);
+  gap: 32px;
+}
+.at-portal-sidebar {
+  align-self: start;
+  position: sticky;
+  top: 72px;
+  background: white;
+  border: 1px solid var(--ma-border);
+  border-radius: 12px;
+  padding: 16px;
+}
+.at-portal-user {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 1px solid var(--ma-border);
+  padding-bottom: 16px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+.at-portal-user small {
+  display: block;
+  font-size: 11px;
+  color: var(--ma-text-muted);
+  margin-top: 4px;
+}
+.at-portal-content {
+  min-width: 0;
+}
+.at-portal-content > main {
+  padding: 0;
+  min-height: 0;
+}
+@media (max-width: 1023px) {
+  .at-portal-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .at-portal-sidebar {
+    position: static;
+    padding: 12px;
+  }
+  .at-portal-sidebar nav {
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+  }
+  .at-portal-user {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .at-portal-container {
+    padding: 20px 16px;
+  }
+}
+@media print {
+  .at-portal-content {
+    width: 100%;
+  }
+}
+.at-portal-page {
+  max-width: 1100px;
+  padding: 40px 24px 64px;
+  margin: 0 auto;
+  min-height: 60vh;
+}
+.at-appointment-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.at-appointment-date {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  background: var(--ma-bg);
+  border: 1px solid var(--ma-border-brand);
+  border-radius: 10px;
+  min-width: 74px;
+  padding: 12px;
+  color: var(--ma-action);
+}
+.at-appointment-date strong {
+  font-size: 28px;
+  line-height: 1.2;
+}
+.at-appointment-date span {
+  font-size: 11px;
+}
+.at-appointment-info {
+  flex: 1;
+  min-width: 0;
+}
+.at-appointment-info h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.at-appointment-info > p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--ma-text-muted);
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.at-appointment-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border-top: 1px solid var(--ma-border);
+  padding-top: 16px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+.at-appointment-bottom small {
+  font-size: 12px;
+  color: var(--ma-text-muted);
+}
+.at-appointment-bottom .at-button {
+  min-height: 44px;
+  min-width: 44px;
+  font-size: 12px;
+  padding: 7px 12px;
+}
+@media (max-width: 767px) {
+  .at-portal-page {
+    padding: 24px 16px 48px;
+  }
+  .at-appointment-card {
+    gap: 12px;
+  }
+  .at-appointment-date {
+    min-width: 55px;
+    padding: 10px 6px;
+  }
+  .at-appointment-date strong {
+    font-size: 24px;
+  }
+  .at-appointment-info h2 {
+    font-size: 14px;
+  }
+  .at-appointment-divider {
+    display: none;
+  }
+  .at-appointment-info > p {
+    font-size: 12px;
+  }
+  .at-appointment-bottom {
+    gap: 12px;
+  }
+  .at-appointment-bottom small {
+    font-size: 11px;
+  }
+}
+@media print {
+  .at-portal-page {
+    padding: 0 !important;
+    max-width: none;
+    min-height: 0;
+  }
+}
+
+/* Screen-specific styles for the portal area. Shared conventions live in app-ui.css. */
+:root {
+  --at-screens-portal: 1;
+}
+.at-portal-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px;
+  margin-bottom: 24px;
+  border: 1px solid var(--ma-border);
+  border-radius: 12px;
+  background: white;
+}
+.at-portal-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: var(--ma-text-muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+.at-portal-nav a[data-active="true"] {
+  background: var(--ma-action-soft);
+  color: var(--ma-action);
+}
+.at-portal-nav a:hover {
+  background: var(--ma-bg);
+}
+.at-slot-portrait {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  border: 1px solid var(--ma-border);
+}
+.at-slot-portrait .doctor-monogram {
+  width: 46px;
+  height: 46px;
+  font-size: 15px;
+}
+.at-appointment-actions,
+.at-appointment-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.at-appointment-relative {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--ma-action-soft);
+  color: var(--ma-action);
+  font-size: 12px;
+  font-weight: 600;
+}
+.at-portal-hero {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 24px;
+  border-top: 4px solid var(--ma-action);
+}
+.at-portal-hero-main h2 {
+  font-size: 24px;
+  margin: 8px 0 16px;
+}
+.at-portal-hero-service,
+.at-portal-hero-place,
+.at-portal-hero-time {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 10px 0;
+}
+.at-portal-hero-service svg,
+.at-portal-hero-place svg,
+.at-portal-hero-time svg {
+  flex-shrink: 0;
+  color: var(--ma-action);
+  margin-top: 3px;
+}
+.at-portal-hero-when {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+.at-portal-hero-time {
+  font-size: 20px;
+  font-weight: 700;
+}
+.at-portal-hero-prepare {
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--ma-bg);
+}
+.at-portal-hero-prepare ul {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  margin-top: 14px;
+  list-style: none;
+}
+.at-portal-hero-prepare li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.at-portal-hero-prepare svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--ma-action);
+}
+.at-portal-hero-actions {
+  grid-column: 1 / -1;
+  padding-top: 20px;
+  border-top: 1px solid var(--ma-border);
+}
+.at-portal-hero-actions > p {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--ma-text-muted);
+}
+.at-online-order-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--ma-bg);
+  border: 1px solid var(--ma-border);
+}
+.at-online-allocation {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--ma-border);
+  background: var(--ma-surface);
+}
+.at-online-lines {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+.at-online-lines li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--ma-bg);
+  font-size: 13px;
+}
+@media (max-width: 760px) {
+  .at-portal-hero {
+    grid-template-columns: 1fr;
+  }
+  .at-portal-nav a {
+    padding: 10px 12px;
+  }
+}
+
+/* A persistent account navigation keeps records and documents within reach. */
+.at-portal-page {
+  max-width: 1240px;
+  margin: auto;
+  padding: 32px;
+}
+.at-portal-welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 28px 32px;
+  margin-bottom: 28px;
+  background: var(--ma-action-hover);
+  color: white;
+  border-radius: var(--ma-radius-lg);
+}
+.at-portal-welcome .at-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ma-action-tint);
+  margin-bottom: 10px;
+}
+.at-portal-welcome h1 {
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+.at-portal-welcome p:not(.at-eyebrow) {
+  font-size: 13px;
+  color: var(--ma-text-on-inverse);
+  line-height: 1.7;
+}
+.at-portal-welcome .at-button {
+  background: white;
+  color: var(--ma-action-hover);
+}
+.at-portal-grid {
+  display: grid;
+  grid-template-columns: 224px minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+.at-portal-nav {
+  position: sticky;
+  top: 148px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 10px;
+  margin: 0;
+  box-shadow: var(--ma-shadow);
+  border-radius: var(--ma-radius);
+  gap: 4px;
+}
+.at-portal-nav a {
+  padding: 13px 12px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.at-portal-nav a[data-active="true"] {
+  background: var(--ma-action-soft);
+  color: var(--ma-action);
+  box-shadow: inset 3px 0 0 var(--ma-action);
+}
+.at-portal-content {
+  min-width: 0;
+}
+.at-portal-content > main {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+.at-portal-hero {
+  border: 1px solid var(--ma-border);
+  border-radius: var(--ma-radius-lg);
+  box-shadow: var(--ma-shadow);
+}
+.at-portal-hero-main h2 {
+  letter-spacing: -0.6px;
+}
+.at-appointment-card {
+  border-radius: var(--ma-radius);
+}
+@media (max-width: 1000px) {
+  .at-portal-page {
+    padding: 24px;
+  }
+  .at-portal-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .at-portal-nav {
+    position: static;
+    flex-direction: row;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  .at-portal-nav a {
+    flex-shrink: 0;
+  }
+  .at-portal-nav a[data-active="true"] {
+    box-shadow: none;
+  }
+}
+@media (max-width: 600px) {
+  .at-portal-page {
+    padding: 20px 16px;
+  }
+  .at-portal-welcome {
+    padding: 24px 20px;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .at-portal-welcome h1 {
+    font-size: 23px;
+  }
+  .at-portal-nav {
+    border-radius: 12px;
+    padding: 6px;
+  }
+  .at-portal-nav a {
+    padding: 11px;
+  }
+  .at-portal-hero {
+    grid-template-columns: 1fr;
+  }
+}
+@media print {
+  .at-portal-page {
+    padding: 0;
+    max-width: none;
+  }
+  .at-portal-grid {
+    display: block;
+  }
+}

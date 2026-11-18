@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-be-vietnam);
+  --color-ink: var(--ma-text);
+  --color-muted: var(--ma-text-muted);
+  --color-line: var(--ma-border);
+  --color-paper: var(--ma-bg);
+  --color-card: var(--ma-surface);
+  --color-brand: var(--ma-action);
+  --color-brand-strong: var(--ma-action-hover);
+  --color-danger: var(--ma-status-danger-fg);
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-be-vietnam), sans-serif;
+}
+@media print {
+  @page {
+    size: A4;
+    margin: 16mm;
+  }
+  body {
+    background: white;
+    color: black;
+    font-size: 11pt;
+  }
+  aside,
+  header,
+  footer,
+  nav,
+  .no-print,
+  .public-topbar,
+  .skip-link {
+    display: none !important;
+  }
+  html,
+  body,
+  main,
+  .public-site,
+  #page-content {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+  main {
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: none !important;
+  }
+  .md\:grid {
+    display: block !important;
+  }
+  .print-document {
+    border: 0;
+    box-shadow: none;
+    padding: 8mm 0;
+  }
+  .print-document p {
+    break-inside: avoid;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}

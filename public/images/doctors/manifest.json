@@ -1,0 +1,567 @@
+{
+  "version": 1,
+  "date": "2026-10-01",
+  "note": "Ảnh stock/AI chỉ minh họa các hồ sơ hư cấu. Không xác nhận danh tính, nghề nghiệp hay quan hệ công tác của người trong ảnh.",
+  "portraits": [
+    {
+      "ordinal": 1,
+      "username": "bacsi01",
+      "file": "doctor-asian-001.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 39, warm confident smile, neat short side-part black hair, no glasses",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 2,
+      "username": "bacsi02",
+      "file": "doctor-asian-002.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 36, friendly composed expression, neat dark hair, thin modern eyeglasses",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 3,
+      "username": "mockbs001",
+      "file": "doctor-asian-003.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 43, broad rectangular face, short neat side-part black hair, no glasses",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 4,
+      "username": "mockbs002",
+      "file": "doctor-asian-004.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 56, oval face, silver-flecked combed-back hair, wire-rim glasses",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 5,
+      "username": "mockbs003",
+      "file": "doctor-asian-005.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 35, round face, short cropped black hair, no glasses",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 6,
+      "username": "mockbs004",
+      "file": "doctor-asian-006.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 35, warm reassuring smile, shoulder-length dark hair, delicate wire-rim glasses",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 7,
+      "username": "mockbs005",
+      "file": "doctor-asian-007.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 31, gentle friendly smile, dark hair neatly tied back, no glasses",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 8,
+      "username": "mockbs006",
+      "file": "doctor-asian-008.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 46, heart-shaped face, shoulder-length dark hair, no glasses",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 9,
+      "username": "mockbs007",
+      "file": "doctor-asian-009.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 48, narrow face, short side-swept black hair, rectangular glasses",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 10,
+      "username": "mockbs008",
+      "file": "doctor-asian-010.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 38, broad face and squared jaw, closely trimmed black hair with a receding hairline, no glasses, a warm closed-mouth smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 11,
+      "username": "mockbs009",
+      "file": "doctor-asian-011.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 52, square face with gentle features, slightly wavy black hair brushed sideways, no glasses, a relaxed natural smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 12,
+      "username": "mockbs010",
+      "file": "doctor-asian-012.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 44, round face and soft cheeks, chin-length black bob with a side part, thin round dark glasses, a warm closed-mouth smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 13,
+      "username": "mockbs011",
+      "file": "doctor-asian-013.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 59, heart-shaped face and arched brows, shoulder-length dark hair with soft waves, no glasses, a relaxed natural smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 14,
+      "username": "mockbs012",
+      "file": "doctor-asian-014.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 34, oval face and high cheekbones, black hair tied back in a neat low bun, no glasses, a warm closed-mouth smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 15,
+      "username": "mockbs013",
+      "file": "doctor-asian-015.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 47, long face and angular cheekbones, salt-and-pepper hair swept back, thin round dark glasses, a relaxed natural smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 16,
+      "username": "mockbs014",
+      "file": "doctor-asian-016.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 41, narrow face and a straight nose, short black hair with side part, subtle rectangular eyeglasses, a warm closed-mouth smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 17,
+      "username": "mockbs015",
+      "file": "doctor-asian-017.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 55, broad face and squared jaw, closely trimmed black hair with a receding hairline, no glasses, a relaxed natural smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 18,
+      "username": "mockbs016",
+      "file": "doctor-asian-018.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 36, square face with gentle features, shoulder-length black hair with curtain bangs, thin round dark glasses, a warm closed-mouth smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 19,
+      "username": "mockbs017",
+      "file": "doctor-asian-019.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 49, round face and soft cheeks, chin-length black bob with a side part, no glasses, a relaxed natural smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 20,
+      "username": "mockbs018",
+      "file": "doctor-asian-020.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 62, heart-shaped face and arched brows, shoulder-length dark hair with soft waves, subtle rectangular eyeglasses, a warm closed-mouth smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 21,
+      "username": "mockbs019",
+      "file": "doctor-asian-021.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 45, oval face and high cheekbones, short neatly cropped black hair, thin round dark glasses, a relaxed natural smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 22,
+      "username": "mockbs020",
+      "file": "doctor-asian-022.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 32, long face and angular cheekbones, salt-and-pepper hair swept back, no glasses, a warm closed-mouth smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 23,
+      "username": "mockbs021",
+      "file": "doctor-asian-023.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 53, narrow face and a straight nose, short black hair with side part, no glasses, a relaxed natural smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 24,
+      "username": "mockbs022",
+      "file": "doctor-asian-024.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 40, broad face and squared jaw, dark hair in a low ponytail, a few silver strands, thin round dark glasses, a warm closed-mouth smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 25,
+      "username": "mockbs023",
+      "file": "doctor-asian-025.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 57, square face with gentle features, shoulder-length black hair with curtain bangs, no glasses, a relaxed natural smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 26,
+      "username": "mockbs024",
+      "file": "doctor-asian-026.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 46, round face and soft cheeks, chin-length black bob with a side part, no glasses, a warm closed-mouth smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 27,
+      "username": "mockbs025",
+      "file": "doctor-asian-027.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 35, heart-shaped face and arched brows, black crew cut, thin round dark glasses, a relaxed natural smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 28,
+      "username": "mockbs026",
+      "file": "doctor-asian-028.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 50, oval face and high cheekbones, short neatly cropped black hair, subtle rectangular eyeglasses, a warm closed-mouth smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 29,
+      "username": "mockbs027",
+      "file": "doctor-asian-029.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 43, long face and angular cheekbones, salt-and-pepper hair swept back, no glasses, a relaxed natural smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 30,
+      "username": "mockbs028",
+      "file": "doctor-asian-030.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 58, narrow face and a straight nose, short layered black pixie haircut, thin round dark glasses, a warm closed-mouth smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 31,
+      "username": "mockbs029",
+      "file": "doctor-asian-031.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 37, broad face and squared jaw, dark hair in a low ponytail, a few silver strands, no glasses, a relaxed natural smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 32,
+      "username": "mockbs030",
+      "file": "doctor-asian-032.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 48, square face with gentle features, shoulder-length black hair with curtain bangs, subtle rectangular eyeglasses, a warm closed-mouth smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 33,
+      "username": "mockbs031",
+      "file": "doctor-asian-033.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 54, round face and soft cheeks, short silver hair with dark roots, thin round dark glasses, a relaxed natural smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 34,
+      "username": "mockbs032",
+      "file": "doctor-asian-034.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 39, heart-shaped face and arched brows, black crew cut, no glasses, a warm closed-mouth smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 35,
+      "username": "mockbs033",
+      "file": "doctor-asian-035.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 60, oval face and high cheekbones, short neatly cropped black hair, no glasses, a relaxed natural smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 36,
+      "username": "mockbs034",
+      "file": "doctor-asian-036.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 42, long face and angular cheekbones, straight dark hair just above the shoulders, thin round dark glasses, a warm closed-mouth smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 37,
+      "username": "mockbs035",
+      "file": "doctor-asian-037.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 38, narrow face and a straight nose, short layered black pixie haircut, no glasses, a relaxed natural smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 38,
+      "username": "mockbs036",
+      "file": "doctor-asian-038.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 52, broad face and squared jaw, dark hair in a low ponytail, a few silver strands, no glasses, a warm closed-mouth smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 39,
+      "username": "mockbs037",
+      "file": "doctor-asian-039.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 44, square face with gentle features, slightly wavy black hair brushed sideways, thin round dark glasses, a relaxed natural smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 40,
+      "username": "mockbs038",
+      "file": "doctor-asian-040.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 59, round face and soft cheeks, short silver hair with dark roots, subtle rectangular eyeglasses, a warm closed-mouth smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 41,
+      "username": "mockbs039",
+      "file": "doctor-asian-041.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 34, heart-shaped face and arched brows, black crew cut, no glasses, a relaxed natural smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 42,
+      "username": "mockbs040",
+      "file": "doctor-asian-042.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 47, oval face and high cheekbones, black hair tied back in a neat low bun, thin round dark glasses, a warm closed-mouth smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 43,
+      "username": "mockbs041",
+      "file": "doctor-asian-043.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 41, long face and angular cheekbones, straight dark hair just above the shoulders, no glasses, a relaxed natural smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 44,
+      "username": "mockbs042",
+      "file": "doctor-asian-044.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 55, narrow face and a straight nose, short layered black pixie haircut, subtle rectangular eyeglasses, a warm closed-mouth smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 45,
+      "username": "mockbs043",
+      "file": "doctor-asian-045.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 36, broad face and squared jaw, closely trimmed black hair with a receding hairline, thin round dark glasses, a relaxed natural smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 46,
+      "username": "mockbs044",
+      "file": "doctor-asian-046.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 49, square face with gentle features, slightly wavy black hair brushed sideways, no glasses, a warm closed-mouth smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 47,
+      "username": "mockbs045",
+      "file": "doctor-asian-047.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 62, round face and soft cheeks, short silver hair with dark roots, no glasses, a relaxed natural smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 48,
+      "username": "mockbs046",
+      "file": "doctor-asian-048.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 45, heart-shaped face and arched brows, shoulder-length dark hair with soft waves, thin round dark glasses, a warm closed-mouth smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 49,
+      "username": "mockbs047",
+      "file": "doctor-asian-049.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 32, oval face and high cheekbones, black hair tied back in a neat low bun, no glasses, a relaxed natural smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 50,
+      "username": "mockbs048",
+      "file": "doctor-asian-050.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 53, long face and angular cheekbones, straight dark hair just above the shoulders, no glasses, a warm closed-mouth smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 51,
+      "username": "mockbs049",
+      "file": "doctor-asian-051.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 40, narrow face and a straight nose, short black hair with side part, thin round dark glasses, a relaxed natural smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 52,
+      "username": "mockbs050",
+      "file": "doctor-asian-052.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 57, broad face and squared jaw, closely trimmed black hair with a receding hairline, subtle rectangular eyeglasses, a warm closed-mouth smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 53,
+      "username": "mockbs051",
+      "file": "doctor-asian-053.jpg",
+      "gender": "male",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "male aged 46, square face with gentle features, slightly wavy black hair brushed sideways, no glasses, a relaxed natural smile, clean shaven",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 54,
+      "username": "mockbs052",
+      "file": "doctor-asian-054.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 35, round face and soft cheeks, chin-length black bob with a side part, thin round dark glasses, a warm closed-mouth smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 55,
+      "username": "mockbs053",
+      "file": "doctor-asian-055.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 50, heart-shaped face and arched brows, shoulder-length dark hair with soft waves, no glasses, a relaxed natural smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    },
+    {
+      "ordinal": 56,
+      "username": "mockbs054",
+      "file": "doctor-asian-056.jpg",
+      "gender": "female",
+      "kind": "generated",
+      "generator": "imagegen",
+      "description": "female aged 43, oval face and high cheekbones, black hair tied back in a neat low bun, subtle rectangular eyeglasses, a warm closed-mouth smile, minimal natural makeup",
+      "style": "Fictional Vietnamese doctor; white coat, teal top, stethoscope; light sage studio background; no text, logo or identifiable badge."
+    }
+  ]
+}

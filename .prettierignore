@@ -1,0 +1,9 @@
+node_modules/
+.next/
+.cache/
+out/
+build/
+package-lock.json
+next-env.d.ts
+../backend/target/
+../backend/src/main/resources/db/migration/

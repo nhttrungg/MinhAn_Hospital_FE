@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Minh An Design Tokens — Dark Theme Overrides (Staff Area)
+   Gắn trên html[data-theme="dark"] để áp dụng cho cả Radix Portal (Dialog, Dropdown, Drawer).
+   Khi in (@media print) luôn quay về bảng màu sáng chuẩn.
+   ========================================================================== */
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* --- Surfaces & Backgrounds --- */
+  --ma-bg: #0f1f1a;
+  --ma-bg-subtle: #12251f;
+  --ma-bg-canvas: #0b1814;
+  --ma-surface: #152a23;
+  --ma-surface-soft: #1a332a;
+  --ma-surface-muted: #203d33;
+  --ma-surface-raised: #1c362d;
+  --ma-surface-hover: #214035;
+  --ma-surface-active: #274b3e;
+  --ma-surface-translucent: rgb(21 42 35 / 92%);
+  --ma-surface-glass: rgb(21 42 35 / 84%);
+  --ma-surface-inverse: #091713;
+  --ma-surface-inverse-strong: #06110e;
+  --ma-surface-inverse-soft: rgb(255 255 255 / 8%);
+  --ma-surface-inverse-hover: rgb(255 255 255 / 14%);
+  --ma-overlay-backdrop: rgb(5 12 10 / 72%);
+
+  /* --- Text & Typography Colors --- */
+  --ma-text: #e3efe8;
+  --ma-text-secondary: #c6ddd1;
+  --ma-text-muted: #9ec0b0;
+  --ma-text-subtle: #88ae9c;
+  --ma-text-on-action: #071e18;
+  --ma-text-on-inverse: #e3efe8;
+  --ma-text-inverse-muted: rgb(227 239 232 / 82%);
+  --ma-text-inverse-subtle: rgb(227 239 232 / 68%);
+  --ma-text-brand: #5fd3a9;
+  --ma-text-brand-strong: #8bc7a3;
+
+  /* --- Borders, Dividers & Focus --- */
+  --ma-border: #26443a;
+  --ma-border-soft: #1e372f;
+  --ma-border-strong: #4e806f;
+  --ma-border-hover: #5e9482;
+  --ma-border-brand: #2d6a54;
+  --ma-border-brand-strong: #38b88c;
+  --ma-border-inverse: rgb(227 239 232 / 16%);
+  --ma-border-inverse-strong: rgb(227 239 232 / 28%);
+  --ma-focus-ring: rgb(56 184 140 / 32%);
+  --ma-focus-outline: #38b88c;
+
+  /* --- Primary Action & Brand Accents --- */
+  --ma-action: #38b88c;
+  --ma-action-hover: #5fd3a9;
+  --ma-action-active: #2ea87e;
+  --ma-action-soft: #1b3d31;
+  --ma-action-soft-hover: #234d3e;
+  --ma-action-tint: #1b3d31;
+  --ma-action-subtle: #173329;
+  --ma-action-fg: #7ce2bc;
+  --ma-accent: #38b88c;
+  --ma-accent-soft: #18362b;
+  --ma-accent-strong: #7ce2bc;
+
+  /* --- Semantic Status Tokens (Low-saturation dark bg, bright accessible fg) --- */
+  --ma-status-success-bg: #132e22;
+  --ma-status-success-fg: #6ee7b7;
+  --ma-status-success-border: #22543d;
+  --ma-status-success-solid: #38b88c;
+
+  --ma-status-warning-bg: #332410;
+  --ma-status-warning-fg: #fbbf24;
+  --ma-status-warning-border: #634419;
+  --ma-status-warning-solid: #f4b860;
+
+  --ma-status-danger-bg: #381817;
+  --ma-status-danger-fg: #fca5a5;
+  --ma-status-danger-border: #6b2b28;
+  --ma-status-danger-solid: #f28b82;
+
+  --ma-status-info-bg: #132738;
+  --ma-status-info-fg: #7cc0ff;
+  --ma-status-info-border: #234b6b;
+  --ma-status-info-solid: #6cb6ff;
+
+  --ma-status-neutral-bg: #1d362d;
+  --ma-status-neutral-fg: #b8d3c6;
+  --ma-status-neutral-border: #2e5245;
+  --ma-status-neutral-solid: #88ae9c;
+
+  /* --- Data Visualization & Charts (WCAG AA >= 4.5:1 on dark --ma-surface) --- */
+  --ma-chart-1: #38b88c;
+  --ma-chart-2: #f4b860;
+  --ma-chart-3: #f28b82;
+  --ma-chart-4: #7cc0ff;
+  --ma-chart-5: #6ee7b7;
+  --ma-chart-grid: #26443a;
+  --ma-chart-axis: #9ec0b0;
+
+  /* --- Gradients & Shadows in Dark Mode --- */
+  --ma-gradient-page: linear-gradient(180deg, #12251f 0%, #0f1f1a 100%);
+  --ma-gradient-surface: linear-gradient(180deg, #183028 0%, #152a23 100%);
+  --ma-gradient-brand: linear-gradient(135deg, #1f7a5c 0%, #176b52 100%);
+  --ma-gradient-brand-deep: linear-gradient(145deg, #0b2d24 0%, #10513e 58%, #176b52 100%);
+  --ma-gradient-brand-soft: linear-gradient(135deg, #173329 0%, #1b3d31 100%);
+  --ma-gradient-hero-warm: linear-gradient(135deg, #242115 0%, #162e25 52%, #132738 100%);
+  --ma-gradient-glow: radial-gradient(circle at top right, rgb(56 184 140 / 16%), transparent 62%);
+
+  --ma-shadow-xs: 0 1px 2px rgb(0 0 0 / 28%);
+  --ma-shadow-sm: 0 8px 20px rgb(0 0 0 / 34%);
+  --ma-shadow: 0 16px 36px rgb(0 0 0 / 42%);
+  --ma-shadow-lg: 0 24px 56px rgb(0 0 0 / 54%);
+  --ma-shadow-brand: 0 10px 24px rgb(0 0 0 / 45%);
+}
+
+@media print {
+  html[data-theme="dark"] {
+    color-scheme: light;
+    --ma-bg: var(--ma-neutral-50);
+    --ma-bg-subtle: var(--ma-neutral-25);
+    --ma-bg-canvas: var(--ma-neutral-75);
+    --ma-surface: var(--ma-neutral-0);
+    --ma-surface-soft: var(--ma-neutral-100);
+    --ma-surface-muted: var(--ma-neutral-200);
+    --ma-surface-raised: var(--ma-neutral-0);
+    --ma-surface-hover: var(--ma-green-50);
+    --ma-surface-active: var(--ma-green-100);
+    --ma-text: var(--ma-neutral-900);
+    --ma-text-secondary: var(--ma-neutral-800);
+    --ma-text-muted: var(--ma-neutral-700);
+    --ma-text-subtle: var(--ma-neutral-600);
+    --ma-text-on-action: var(--ma-neutral-0);
+    --ma-border: var(--ma-neutral-300);
+    --ma-border-soft: var(--ma-neutral-200);
+    --ma-border-strong: var(--ma-neutral-400);
+    --ma-action: var(--ma-green-600);
+    --ma-action-hover: var(--ma-green-700);
+    --ma-action-soft: var(--ma-green-100);
+    --ma-action-fg: var(--ma-green-700);
+    --ma-status-success-bg: var(--ma-emerald-50);
+    --ma-status-success-fg: var(--ma-emerald-600);
+    --ma-status-warning-bg: var(--ma-amber-50);
+    --ma-status-warning-fg: var(--ma-amber-600);
+    --ma-status-danger-bg: var(--ma-red-50);
+    --ma-status-danger-fg: var(--ma-red-600);
+    --ma-status-info-bg: var(--ma-blue-50);
+    --ma-status-info-fg: var(--ma-blue-600);
+    --ma-status-neutral-bg: var(--ma-neutral-100);
+    --ma-status-neutral-fg: var(--ma-neutral-700);
+  }
+}

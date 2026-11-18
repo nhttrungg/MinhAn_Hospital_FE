@@ -1,0 +1,78 @@
+/* ==========================================================================
+   Minh An Design Tokens — Layer 1: Primitives
+   Chỉ chứa thang màu thô. KHÔNG dùng trực tiếp các biến này trong component/screen CSS.
+   ========================================================================== */
+
+:root {
+  /* Minh An Brand Green Scale (#176b52 primary anchor) */
+  --ma-green-25: #f6fbf8;
+  --ma-green-50: #eaf4ed;
+  --ma-green-75: #dff0e5;
+  --ma-green-100: #c5e7cd;
+  --ma-green-150: #d4e8df;
+  --ma-green-175: #d7e9df;
+  --ma-green-200: #c2dacd;
+  --ma-green-300: #8aba97;
+  --ma-green-400: #38b88c;
+  --ma-green-500: #1f7a5c;
+  --ma-green-600: #176b52;
+  --ma-green-700: #10513e;
+  --ma-green-800: #0d4233;
+  --ma-green-900: #123b30;
+  --ma-green-950: #071e18;
+
+  /* Neutral Warm-Sage Scale */
+  --ma-neutral-0: #ffffff;
+  --ma-neutral-25: #fbfdfb;
+  --ma-neutral-50: #f5f8f5;
+  --ma-neutral-75: #edf5ed;
+  --ma-neutral-100: #eef5f0;
+  --ma-neutral-200: #e5efe8;
+  --ma-neutral-300: #dce7e0;
+  --ma-neutral-400: #bfd2c7;
+  --ma-neutral-500: #96b4a4;
+  --ma-neutral-600: #60756f;
+  --ma-neutral-700: #526c64;
+  --ma-neutral-800: #2e554d;
+  --ma-neutral-900: #183b34;
+  --ma-neutral-925: #152a23;
+  --ma-neutral-950: #0f1f1a;
+
+  /* Semantic Status Scales — Green (Success) */
+  --ma-emerald-50: #e6f5ed;
+  --ma-emerald-100: #d1ede0;
+  --ma-emerald-200: #a6dcc2;
+  --ma-emerald-300: #6ee7b7;
+  --ma-emerald-600: #1f7a49;
+  --ma-emerald-700: #166038;
+  --ma-emerald-900: #132e22;
+
+  /* Semantic Status Scales — Amber (Warning) */
+  --ma-amber-50: #fdf2df;
+  --ma-amber-100: #fae5c3;
+  --ma-amber-200: #f3cc8f;
+  --ma-amber-300: #fbbf24;
+  --ma-amber-500: #d98218;
+  --ma-amber-600: #9e5d10;
+  --ma-amber-650: #a46515;
+  --ma-amber-700: #834c0c;
+  --ma-amber-900: #332410;
+
+  /* Semantic Status Scales — Red (Danger) */
+  --ma-red-50: #fceae8;
+  --ma-red-100: #f9d5d1;
+  --ma-red-200: #f1ada6;
+  --ma-red-300: #fca5a5;
+  --ma-red-600: #9f2d2d;
+  --ma-red-700: #7f2222;
+  --ma-red-900: #381817;
+
+  /* Semantic Status Scales — Blue (Info) */
+  --ma-blue-50: #e8f2fa;
+  --ma-blue-100: #d0e5f5;
+  --ma-blue-200: #a3cce9;
+  --ma-blue-300: #7cc0ff;
+  --ma-blue-600: #2563a0;
+  --ma-blue-700: #1a496b;
+  --ma-blue-900: #132738;
+}

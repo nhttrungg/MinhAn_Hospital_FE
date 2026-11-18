@@ -1,0 +1,42 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit --incremental false",
+    "format": "prettier --config .prettierrc.json --write \"src/**/*.{ts,tsx,css}\" \"*.{json,mjs,ts}\" \"../backend/src/**/*.java\" ../README.md ../docker-compose.yml ../docker-compose.scale.yml \"../backend/pom.xml\" \"../backend/src/**/*.yml\"",
+    "format:check": "prettier --config .prettierrc.json --check \"src/**/*.{ts,tsx,css}\" \"*.{json,mjs,ts}\" \"../backend/src/**/*.java\" ../README.md ../docker-compose.yml ../docker-compose.scale.yml \"../backend/pom.xml\" \"../backend/src/**/*.yml\""
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.9.1",
+    "@tanstack/react-query": "^5.104.0",
+    "@tanstack/react-table": "^8.21.3",
+    "@zxing/browser": "^0.1.5",
+    "lucide-react": "^1.49.0",
+    "next": "16.3.7",
+    "radix-ui": "^1.6.7",
+    "react": "19.2.8",
+    "react-day-picker": "^10.0.2",
+    "react-dom": "19.2.8",
+    "react-hook-form": "^7.89.0",
+    "recharts": "^3.10.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "3.4.2",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^24.19.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.7",
+    "prettier": "3.9.9",
+    "prettier-plugin-java": "2.11.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

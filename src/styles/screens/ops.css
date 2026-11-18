@@ -1,0 +1,529 @@
+/* Screen-specific styles for the ops area. Shared conventions live in app-ui.css. */
+:root {
+  --at-screens-ops: 1;
+}
+
+/* Filters */
+.at-ops-filters > .at-field {
+  flex: 1 1 168px;
+  min-width: 150px;
+}
+.at-ops-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.at-ops-summary {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ma-text-muted);
+}
+.at-ops-summary strong {
+  color: var(--ma-text);
+  font-variant-numeric: tabular-nums;
+}
+.at-ops-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Tables */
+.at-ops-table .at-table small {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--ma-text-muted);
+}
+.at-ops-table .at-cell-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0;
+  text-align: left;
+}
+.at-ops-table .at-cell-name:focus-visible {
+  outline: 2px solid var(--ma-action);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+.at-ops-table .at-table th[data-column="total"],
+.at-ops-table .at-table td[data-column="total"],
+.at-ops-table .at-table th[data-column="balance"],
+.at-ops-table .at-table td[data-column="balance"] {
+  text-align: right;
+}
+.at-ops-money-due {
+  color: var(--ma-status-danger-fg);
+}
+.at-ops-money-zero {
+  color: var(--ma-text-muted);
+  font-weight: 500;
+}
+.at-queue-no {
+  display: inline-grid;
+  place-items: center;
+  min-width: 38px;
+  height: 38px;
+  padding: 0 8px;
+  border-radius: 10px;
+  background: var(--ma-action-soft);
+  color: var(--ma-action);
+  font-size: 17px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.at-queue-no[data-state="active"] {
+  background: var(--ma-action);
+  color: var(--ma-text-on-action);
+}
+.at-queue-none {
+  color: var(--ma-text-muted);
+}
+.at-next-step {
+  display: grid;
+  justify-items: start;
+  gap: 4px;
+  font-size: 13px;
+}
+.at-next-step small {
+  margin: 0;
+}
+.at-ops-table tr[data-priority="true"] td:first-child {
+  box-shadow: inset 3px 0 0 var(--ma-action);
+}
+
+/* Detail panels inside dialogs */
+.at-ops-panel {
+  display: grid;
+  gap: 16px;
+}
+.at-ops-panel-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+.at-ops-panel-head h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ma-text);
+}
+.at-ops-panel-head small {
+  display: block;
+  font-size: 12px;
+  color: var(--ma-text-muted);
+  font-weight: 500;
+}
+.at-ops-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.at-ops-timeline {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.at-ops-timeline li {
+  position: relative;
+  display: grid;
+  gap: 2px;
+  margin-left: 4px;
+  padding: 0 0 12px 18px;
+  font-size: 13px;
+  border-left: 2px solid var(--ma-border-brand);
+}
+.at-ops-timeline li::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ma-action);
+}
+.at-ops-timeline li:last-child {
+  border-left-color: transparent;
+  padding-bottom: 0;
+}
+.at-ops-timeline small {
+  color: var(--ma-text-muted);
+}
+
+/* Payment summary */
+.at-pay-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+.at-pay-summary > div {
+  display: grid;
+  gap: 2px;
+  padding: 12px 14px;
+  border: 1px solid var(--ma-border);
+  border-radius: 10px;
+  background: var(--ma-surface-raised);
+}
+.at-pay-summary dt {
+  font-size: 12px;
+  color: var(--ma-text-muted);
+}
+.at-pay-summary dd {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ma-text);
+  font-variant-numeric: tabular-nums;
+}
+.at-pay-summary > div[data-tone="due"] {
+  border-color: var(--ma-status-danger-border);
+  background: var(--ma-bg);
+}
+.at-pay-summary > div[data-tone="due"] dd {
+  color: var(--ma-status-danger-fg);
+}
+.at-pay-summary > div[data-tone="paid"] {
+  border-color: var(--ma-border-brand-strong);
+  background: var(--ma-bg);
+}
+.at-pay-summary > div[data-tone="paid"] dd {
+  color: var(--ma-action);
+}
+.at-pay-form {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid var(--ma-border-brand);
+  border-radius: 12px;
+  background: var(--ma-surface);
+}
+.at-pay-form h3 {
+  margin: 0;
+}
+.at-pay-after {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 16px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--ma-bg);
+  font-size: 13px;
+  color: var(--ma-action-hover);
+}
+.at-pay-after strong {
+  font-variant-numeric: tabular-nums;
+  color: var(--ma-text);
+}
+.at-pay-qr {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  padding: 16px;
+  border: 1px dashed var(--ma-border-brand-strong);
+  border-radius: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+.at-pay-qr p {
+  margin: 0;
+}
+
+/* Invoice cards (patient portal) */
+.at-invoice-card {
+  display: grid;
+  gap: 12px;
+  align-content: start;
+}
+.at-invoice-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+.at-invoice-card-head h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ma-text);
+}
+.at-invoice-card-head small {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--ma-text-muted);
+  font-weight: 400;
+}
+.at-invoice-card-money {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin: 0;
+}
+.at-invoice-card-money > div {
+  display: grid;
+  gap: 2px;
+}
+.at-invoice-card-money dt {
+  font-size: 12px;
+  color: var(--ma-text-muted);
+}
+.at-invoice-card-money dd {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Vitals / nursing */
+.at-vitals-card {
+  display: grid;
+  gap: 16px;
+}
+.at-vitals-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+.at-vitals-head h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ma-text);
+}
+.at-vitals-head small {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--ma-text-muted);
+}
+.at-vitals-hint {
+  margin: 0;
+  font-size: 12px;
+  color: var(--ma-text-muted);
+}
+.at-vitals-readonly {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: var(--ma-surface-raised);
+  white-space: pre-wrap;
+  font-size: 14px;
+}
+
+/* Scan box */
+.at-scan-box {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid var(--ma-border-brand);
+  border-radius: 12px;
+  background: var(--ma-surface);
+}
+.at-scan-box h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ma-text);
+}
+.at-scan-box > p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ma-text-muted);
+}
+.at-scan-result {
+  display: grid;
+  gap: 12px;
+}
+
+/* Patient dialog */
+.at-patient-hero h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ma-text);
+}
+.at-patient-hero small {
+  display: block;
+  font-size: 12px;
+  color: var(--ma-text-muted);
+}
+
+@media (max-width: 767px) {
+  .at-pay-summary {
+    grid-template-columns: 1fr;
+  }
+  .at-pay-summary > div {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+  .at-pay-summary dd {
+    font-size: 16px;
+  }
+  .at-ops-filters > .at-field {
+    flex-basis: calc(50% - 8px);
+    min-width: 0;
+  }
+
+  /* Card layout for ops tables on small screens */
+  .at-table-wrap.at-ops-table {
+    overflow: visible;
+    border: 0;
+    background: transparent;
+  }
+  .at-table-wrap.at-ops-table .at-table {
+    display: block;
+    min-width: 0;
+    width: 100%;
+    background: transparent;
+  }
+  .at-table-wrap.at-ops-table .at-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .at-table-wrap.at-ops-table .at-table tbody {
+    display: grid;
+    gap: 12px;
+  }
+  .at-table-wrap.at-ops-table .at-table tr {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px 12px;
+    padding: 14px;
+    border: 1px solid var(--ma-border);
+    border-radius: 12px;
+    background: var(--ma-surface);
+  }
+  .at-table-wrap.at-ops-table .at-table td {
+    display: block;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    text-align: left;
+    background: transparent;
+    grid-column: 1 / -1;
+  }
+  .at-table-wrap.at-ops-table .at-table td[data-column="time"]::before,
+  .at-table-wrap.at-ops-table .at-table td[data-column="doctor"]::before,
+  .at-table-wrap.at-ops-table .at-table td[data-column="next"]::before,
+  .at-table-wrap.at-ops-table .at-table td[data-column="charge"]::before,
+  .at-table-wrap.at-ops-table .at-table td[data-column="total"]::before,
+  .at-table-wrap.at-ops-table .at-table td[data-column="balance"]::before {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: var(--ma-text-muted);
+  }
+  .at-table-wrap.at-ops-table .at-table td[data-column="time"]::before {
+    content: "Thời gian / phòng";
+  }
+  .at-table-wrap.at-ops-table .at-table td[data-column="doctor"]::before {
+    content: "Bác sĩ / dịch vụ";
+  }
+  .at-table-wrap.at-ops-table .at-table td[data-column="next"]::before {
+    content: "Bước tiếp theo";
+  }
+  .at-table-wrap.at-ops-table .at-table td[data-column="charge"]::before {
+    content: "Khoản thu";
+  }
+  .at-table-wrap.at-ops-table .at-table td[data-column="total"]::before {
+    content: "Tổng tiền";
+  }
+  .at-table-wrap.at-ops-table .at-table td[data-column="balance"]::before {
+    content: "Còn phải thu";
+  }
+  /* Appointments: name (left) + queue number (right), then everything full width */
+  .at-ops-appointments .at-table td[data-column="patient"] {
+    grid-column: 1;
+    order: 1;
+  }
+  .at-ops-appointments .at-table td[data-column="queue"] {
+    grid-column: 2;
+    order: 2;
+    text-align: right;
+  }
+  .at-ops-appointments .at-table td[data-column="status"] {
+    order: 3;
+  }
+  .at-ops-appointments .at-table td[data-column="time"] {
+    order: 4;
+  }
+  .at-ops-appointments .at-table td[data-column="doctor"] {
+    order: 5;
+  }
+  .at-ops-appointments .at-table td[data-column="next"] {
+    order: 6;
+  }
+  /* Invoices: code (left) + status (right), money side by side */
+  .at-ops-invoices .at-table td[data-column="code"] {
+    grid-column: 1;
+    order: 1;
+  }
+  .at-ops-invoices .at-table td[data-column="status"] {
+    grid-column: 2;
+    order: 2;
+    text-align: right;
+  }
+  .at-ops-invoices .at-table td[data-column="charge"] {
+    order: 3;
+  }
+  .at-ops-invoices .at-table td[data-column="total"] {
+    grid-column: 1;
+    order: 4;
+    text-align: left;
+  }
+  .at-ops-invoices .at-table td[data-column="balance"] {
+    grid-column: 2;
+    order: 5;
+    text-align: right;
+  }
+  .at-table-wrap.at-ops-table .at-table td[data-column="actions"] {
+    position: static;
+    order: 9;
+    padding-top: 10px;
+    border-top: 1px solid var(--ma-border);
+    text-align: left;
+    box-shadow: none;
+  }
+  .at-table-wrap.at-ops-table .at-table td[data-column="actions"] .at-row-actions {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .at-table-wrap.at-ops-table .at-table td .at-button {
+    min-height: 44px;
+  }
+  .at-ops-table tr[data-priority="true"] td:first-child {
+    box-shadow: none;
+  }
+  .at-ops-table tr[data-priority="true"] {
+    border-left: 3px solid var(--ma-action);
+  }
+}
+@media print {
+  .at-ops-filters,
+  .at-ops-toolbar,
+  .at-scan-box {
+    display: none !important;
+  }
+}

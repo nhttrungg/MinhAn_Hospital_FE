@@ -1,0 +1,196 @@
+/* ==========================================================================
+   Minh An Design Tokens — Layer 2 & 3: Semantic & Component Tokens (Light)
+   Mọi file CSS ngoài thư mục tokens/ chỉ được tham chiếu các biến semantic/component này.
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* --- Surfaces & Backgrounds --- */
+  --ma-bg: var(--ma-neutral-50);
+  --ma-bg-subtle: var(--ma-neutral-25);
+  --ma-bg-canvas: var(--ma-neutral-75);
+  --ma-surface: var(--ma-neutral-0);
+  --ma-surface-soft: var(--ma-neutral-100);
+  --ma-surface-muted: var(--ma-neutral-200);
+  --ma-surface-raised: var(--ma-neutral-25);
+  --ma-surface-hover: var(--ma-green-50);
+  --ma-surface-active: var(--ma-green-100);
+  --ma-surface-translucent: rgb(255 255 255 / 92%);
+  --ma-surface-glass: rgb(255 255 255 / 84%);
+  --ma-surface-inverse: var(--ma-green-900);
+  --ma-surface-inverse-strong: var(--ma-green-950);
+  --ma-surface-inverse-soft: rgb(255 255 255 / 8%);
+  --ma-surface-inverse-hover: rgb(255 255 255 / 14%);
+  --ma-overlay-backdrop: rgb(15 31 26 / 48%);
+
+  /* --- Text & Typography Colors --- */
+  --ma-text: var(--ma-neutral-900);
+  --ma-text-secondary: var(--ma-neutral-800);
+  --ma-text-muted: var(--ma-neutral-700);
+  --ma-text-subtle: var(--ma-neutral-600);
+  --ma-text-on-action: var(--ma-neutral-0);
+  --ma-text-on-inverse: var(--ma-green-150);
+  --ma-text-inverse-soft: var(--ma-green-175);
+  --ma-text-inverse-muted: var(--ma-green-200);
+  --ma-text-brand: var(--ma-green-600);
+  --ma-text-brand-strong: var(--ma-green-700);
+
+  /* --- Borders, Dividers & Focus --- */
+  --ma-border: var(--ma-neutral-300);
+  --ma-border-soft: var(--ma-neutral-200);
+  --ma-border-strong: var(--ma-neutral-400);
+  --ma-border-hover: var(--ma-neutral-500);
+  --ma-border-brand: var(--ma-green-100);
+  --ma-border-brand-strong: var(--ma-green-300);
+  --ma-border-inverse: rgb(255 255 255 / 16%);
+  --ma-border-inverse-strong: rgb(255 255 255 / 28%);
+  --ma-focus-ring: rgb(23 107 82 / 24%);
+  --ma-focus-outline: var(--ma-green-600);
+
+  /* --- Primary Action & Brand Accents --- */
+  --ma-action: var(--ma-green-600);
+  --ma-action-hover: var(--ma-green-700);
+  --ma-action-active: var(--ma-green-800);
+  --ma-action-soft: var(--ma-green-50);
+  --ma-action-soft-hover: var(--ma-green-75);
+  --ma-action-tint: var(--ma-green-100);
+  --ma-action-subtle: var(--ma-green-25);
+  --ma-action-fg: var(--ma-green-700);
+  --ma-accent: var(--ma-green-500);
+  --ma-accent-soft: var(--ma-green-50);
+  --ma-accent-strong: var(--ma-green-700);
+
+  /* --- Semantic Status Tokens --- */
+  --ma-status-success-bg: var(--ma-emerald-50);
+  --ma-status-success-fg: var(--ma-emerald-600);
+  --ma-status-success-border: var(--ma-emerald-200);
+  --ma-status-success-solid: var(--ma-emerald-600);
+
+  --ma-status-warning-bg: var(--ma-amber-50);
+  --ma-status-warning-fg: var(--ma-amber-600);
+  --ma-status-warning-border: var(--ma-amber-200);
+  --ma-status-warning-solid: var(--ma-amber-600);
+
+  --ma-status-danger-bg: var(--ma-red-50);
+  --ma-status-danger-fg: var(--ma-red-600);
+  --ma-status-danger-border: var(--ma-red-200);
+  --ma-status-danger-solid: var(--ma-red-600);
+
+  --ma-status-info-bg: var(--ma-blue-50);
+  --ma-status-info-fg: var(--ma-blue-600);
+  --ma-status-info-border: var(--ma-blue-200);
+  --ma-status-info-solid: var(--ma-blue-600);
+
+  --ma-status-neutral-bg: var(--ma-neutral-100);
+  --ma-status-neutral-fg: var(--ma-neutral-700);
+  --ma-status-neutral-border: var(--ma-neutral-300);
+  --ma-status-neutral-solid: var(--ma-neutral-600);
+
+  /* --- Data Visualization & Charts (WCAG AA >= 4.5:1 on --ma-surface) --- */
+  --ma-chart-1: var(--ma-green-600);
+  --ma-chart-2: var(--ma-amber-600);
+  --ma-chart-3: var(--ma-red-600);
+  --ma-chart-4: var(--ma-blue-600);
+  --ma-chart-5: var(--ma-green-500);
+  --ma-chart-grid: var(--ma-neutral-300);
+  --ma-chart-axis: var(--ma-neutral-700);
+
+  /* --- Display Queue Board Semantic Tokens (TV Screen) --- */
+  --ma-display-bg: var(--ma-green-950);
+  --ma-display-bg-accent: var(--ma-green-900);
+  --ma-display-surface: rgb(18 59 48 / 76%);
+  --ma-display-surface-elevated: rgb(23 107 82 / 28%);
+  --ma-display-surface-highlight: rgb(56 184 140 / 20%);
+  --ma-display-border: rgb(139 199 163 / 24%);
+  --ma-display-border-strong: rgb(56 184 140 / 52%);
+  --ma-display-text: var(--ma-neutral-0);
+  --ma-display-text-muted: var(--ma-green-150);
+  --ma-display-text-accent: var(--ma-emerald-300);
+  --ma-display-badge-bg: var(--ma-emerald-300);
+  --ma-display-badge-fg: var(--ma-green-950);
+  --ma-display-warn: var(--ma-amber-300);
+
+  /* --- Gradients & Decorative Surfaces --- */
+  --ma-gradient-page: linear-gradient(180deg, var(--ma-neutral-25) 0%, var(--ma-bg) 100%);
+  --ma-gradient-surface: linear-gradient(180deg, var(--ma-surface) 0%, var(--ma-surface-soft) 100%);
+  --ma-gradient-brand: linear-gradient(135deg, var(--ma-green-600) 0%, var(--ma-green-700) 100%);
+  --ma-gradient-brand-deep: linear-gradient(
+    145deg,
+    var(--ma-green-900) 0%,
+    var(--ma-green-700) 58%,
+    var(--ma-green-600) 100%
+  );
+  --ma-gradient-brand-soft: linear-gradient(
+    135deg,
+    var(--ma-green-50) 0%,
+    var(--ma-green-100) 100%
+  );
+  --ma-gradient-hero-warm: linear-gradient(
+    135deg,
+    var(--ma-amber-50) 0%,
+    var(--ma-green-50) 52%,
+    var(--ma-blue-50) 100%
+  );
+  --ma-gradient-glow: radial-gradient(circle at top right, rgb(23 107 82 / 14%), transparent 62%);
+
+  /* --- Layer 3: Component Tokens --- */
+  --at-button-bg: var(--ma-action);
+  --at-button-bg-hover: var(--ma-action-hover);
+  --at-button-fg: var(--ma-text-on-action);
+  --at-button-secondary-bg: var(--ma-surface);
+  --at-button-secondary-bg-hover: var(--ma-surface-soft);
+  --at-button-secondary-fg: var(--ma-text);
+  --at-button-secondary-border: var(--ma-border-strong);
+
+  --at-card-bg: var(--ma-surface);
+  --at-card-border: var(--ma-border);
+  --at-card-header-bg: var(--ma-surface-soft);
+
+  --at-input-bg: var(--ma-surface);
+  --at-input-border: var(--ma-border-strong);
+  --at-input-border-focus: var(--ma-action);
+  --at-input-fg: var(--ma-text);
+  --at-input-placeholder: var(--ma-text-muted);
+
+  --at-table-header-bg: var(--ma-surface-soft);
+  --at-table-header-fg: var(--ma-text-secondary);
+  --at-table-row-hover: var(--ma-surface-hover);
+  --at-table-border: var(--ma-border);
+
+  --at-badge-neutral-bg: var(--ma-status-neutral-bg);
+  --at-badge-neutral-fg: var(--ma-status-neutral-fg);
+  --at-badge-success-bg: var(--ma-status-success-bg);
+  --at-badge-success-fg: var(--ma-status-success-fg);
+  --at-badge-warning-bg: var(--ma-status-warning-bg);
+  --at-badge-warning-fg: var(--ma-status-warning-fg);
+  --at-badge-danger-bg: var(--ma-status-danger-bg);
+  --at-badge-danger-fg: var(--ma-status-danger-fg);
+  --at-badge-info-bg: var(--ma-status-info-bg);
+  --at-badge-info-fg: var(--ma-status-info-fg);
+
+  /* --- Radius, Spacing, Shadows, Typography & Motion --- */
+  --ma-radius-sm: 8px;
+  --ma-radius: 16px;
+  --ma-radius-lg: 24px;
+  --ma-radius-pill: 999px;
+
+  --ma-space-1: 4px;
+  --ma-space-2: 8px;
+  --ma-space-3: 12px;
+  --ma-space-4: 16px;
+  --ma-space-6: 24px;
+  --ma-space-8: 32px;
+
+  --ma-shadow-xs: 0 1px 2px rgb(16 42 35 / 5%);
+  --ma-shadow-sm: 0 2px 8px rgb(24 59 52 / 5%);
+  --ma-shadow-md: 0 6px 20px rgb(22 48 43 / 7%);
+  --ma-shadow: 0 8px 32px rgb(22 48 43 / 6%);
+  --ma-shadow-brand: 0 10px 24px rgb(23 107 82 / 18%);
+
+  --ma-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --at-radius: var(--ma-radius);
+  --at-shadow: var(--ma-shadow);
+  --at-motion: 180ms;
+}
